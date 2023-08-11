@@ -1,27 +1,64 @@
-# FeTechnicalExam
+# Frontend Technical Exam for MYBOS
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+## Requirements
+- PHP CLI (v8.x)
+- Composer
+- NPM
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Initialise and start the API Server
+- `$ cd api`
+- `$ composer install`
+- `$ php artisan serve --port=8000`
 
-## Code scaffolding
+With the above, take note of your available routes
+- http://localhost:8000/api/cases
+- http://localhost:8000/api/cases/{id}
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The Cases Endpoint supports `page` and `per_page` query string parameters
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Initialise and start the APP Server
+- `$ cd app`
+- `$ npm install`
+- `$ npm start -- --port 9000`
 
-## Running unit tests
+With the above, take note of your availble route
+- http://localhost:9000/
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+# Exam Instructions
+Fork this repository to a personal public repository on GitHub.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+This personal repository will be provided to MYBOS at the end of the Exam.
 
-## Further help
+## Task
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The objective of this task is to create 2 components that are data bound to the provided API Endpoints
+
+[MYBOS - Figma Design](https://www.figma.com/file/aHDakjzdHMW4NJEfUSjXAo/Task?type=design&node-id=0%3A1&mode=design&t=TWNGPKJ0axJluWzy-1)
+
+---
+
+The first component is to create a paginated Grid List. This component should be bound to the following API Endpoint
+
+http://localhost:8000/api/cases
+
+Please note, you can set the `per_page` and `page` values using query string parameters
+
+http://localhost:8000/api/cases?per_page=20&page=2
+
+---
+
+The second component is a Cases Details page. This component should be bound to the following API Endpoint
+
+http://localhost:8000/api/cases/30
+
+---
+
+Please feel free to utilise any publicly availble components or assets that you feel will help produce the desired outcome.
+
+Any packages installed should be listed here in your version of the Projects README.md file.
