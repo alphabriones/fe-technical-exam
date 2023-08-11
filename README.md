@@ -53,6 +53,8 @@ Please note, you can set the `per_page` and `page` values using query string par
 
 http://localhost:8000/api/cases?per_page=20&page=2
 
+**Clicking on a row within the Grid List should direct the browser to the second Component/Route.**
+
 ---
 
 The second component is a Cases Details page. This component should be bound to the following API Endpoint
