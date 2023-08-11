@@ -35,6 +35,8 @@ Fork this repository to a personal public repository on GitHub.
 
 This personal repository will be provided to MYBOS at the end of the Exam.
 
+Please feel free to customise all logic and the provided routes to meet the requirements of this exam.
+
 ## Task
 
 The objective of this task is to create 2 components that are data bound to the provided API Endpoints
@@ -59,6 +61,6 @@ http://localhost:8000/api/cases/30
 
 ---
 
-Please feel free to utilise any publicly availble components or assets that you feel will help produce the desired outcome.
+Please feel free to utilise any publicly available components or assets that you feel will help produce the desired outcome.
 
 Any packages installed should be listed here in your version of the Projects README.md file.
