@@ -10,7 +10,7 @@ Or feel free to use Docker to run this Repository.
 
 ---
 
-## Step 1 - Initialise and start the API Server
+# Step 1 - Initialise and start the API Server
 - `$ cd api`
 - `$ composer install`
 - `$ php artisan serve --port=8000`
@@ -23,7 +23,7 @@ The Cases Endpoint supports `page` and `per_page` query string parameters
 
 ---
 
-## Step 2 - Initialise and start the APP Server
+# Step 2 - Initialise and start the APP Server
 - `$ cd app`
 - `$ npm install`
 - `$ npm start -- --port 9000`
@@ -56,7 +56,9 @@ Note: Please log in to a Figma account to get access to Ruler tools and other fe
 The above Figma design is for the MYBOS Cases Module. Everything you see there is as intended for our product ready App.
 Feel free to imitate this design to your best ability in the process of completing this Exam.
 
-Please note that we only require the Exam Components (the highlighted frame in Figma) in this test;
+Please note that we only require the Exam Components (the highlighted frame in Figma) in this test
+
+[MYBOS - Figma Design - Required Components](https://www.figma.com/file/xXIsvJmavZ6g92Cfhdn1bw/Cases?type=design&node-id=2809%3A6328&mode=design&t=I9HcfPFlr8yhS9oV-1)
 
 However, any attempt to complete the design would be viewed favourably.
 
