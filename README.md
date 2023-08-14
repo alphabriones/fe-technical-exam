@@ -42,7 +42,7 @@ Please feel free to customise all logic and the provided routes to meet the requ
 
 ---
 
-## Step 4 - Task
+# Step 4 - Task
 
 The objective of this task is to create 2 components that are data bound to the provided API Endpoints
 
