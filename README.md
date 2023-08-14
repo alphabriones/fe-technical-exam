@@ -60,6 +60,9 @@ Please note that we only require the Exam Components (the highlighted frame in F
 
 However, any attempt to complete the design would be viewed favourably.
 
+NOTE: It is important to understand that in the Exam, the API is read only. That is, there are no post/update/delete
+requests included. Please imitate the design to your best ability.
+
 ### Requirement 1 - Case Grid List Component
 
 The first component is to create a paginated Grid List. This component should be bound to the following API Endpoint
