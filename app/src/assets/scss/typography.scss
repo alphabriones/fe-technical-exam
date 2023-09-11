@@ -1,0 +1,15 @@
+a {
+  text-decoration: none;
+  transition: opacity 0.6s ease-in-out;
+
+  &.link-reverse {
+    color: #ffffff;
+  }
+
+  &.link-reverse:hover,
+  &.link-reverse:active,
+  &.link-reverse:focus {
+    color: #ffffff;
+    opacity: 0.7;
+  }
+}

@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CasesComponent } from './cases/cases.component';
 import { CasesDetailsComponent } from './cases-details/cases-details.component';
+import { SideNavComponent } from './navigation/side-nav/side-nav.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,6 +21,8 @@ const appRoutes: Routes = [
     HomeComponent,
     CasesComponent,
     CasesDetailsComponent,
+    SideNavComponent,
+    TopBarComponent,
   ],
   imports: [
     BrowserModule,

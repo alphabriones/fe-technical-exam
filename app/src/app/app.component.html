@@ -1,26 +1,19 @@
-<div>
-  <div class="mybos-container d-flex justify-content-start">
-    <aside class="sm-side">
-      <div class="d-flex flex-column align-items-center gap-3">
-        <a class="mybos-logo" href="javascript:;">
-          <img src="/assets/img/logo.svg" />
-        </a>
-        <div>
-          <img src="/assets/img/building.png" />
-        </div>
+<div class="mybos-container d-flex justify-content-start">
+  <aside class="mybos-side-panel">
+    <div class="d-flex flex-column align-items-center gap-3">
+      <a class="mybos-logo" href="javascript:;">
+        <img src="/assets/img/logo.svg" />
+      </a>
+      <div>
+        <img src="/assets/img/building.png" />
       </div>
+    </div>
+    <app-side-nav></app-side-nav>
+  </aside>
 
-      <ul class="mybos-main-nav">
-        <li *ngFor="let nav of navigation" class="">
-          <a href="#" class="d-flex align-items-center gap-2">
-            <img src="/assets/img/navigation-icons/{{ nav.icon }}.svg" />
-            <span>{{ nav.title }}</span>
-          </a>
-        </li>
-      </ul>
-    </aside>
-
-    <aside class="lg-side">
+  <aside class="lg-side">
+    <app-top-bar></app-top-bar>
+    <div class="container-fluid d-none">
       <div class="inbox-head">
         <h3>Inbox</h3>
         <form action="#" class="pull-right position">
@@ -405,6 +398,6 @@
           </tbody>
         </table>
       </div>
-    </aside>
-  </div>
+    </div>
+  </aside>
 </div>

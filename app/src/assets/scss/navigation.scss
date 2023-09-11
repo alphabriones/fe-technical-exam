@@ -1,0 +1,41 @@
+.mybos-side-panel {
+  background: #00274b;
+  border-radius: 8px;
+  color: white;
+  max-width: 275px;
+  margin-right: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.mybos-main-nav {
+  display: inline-block;
+  margin: 40px 0 0 0;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.mybos-main-nav li {
+  display: inline-block;
+  line-height: 45px;
+  width: 100%;
+}
+
+.mybos-main-nav li a {
+  color: #ffffff;
+  display: inline-block;
+  line-height: 45px;
+  padding: 0 25px;
+  width: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  background: #19467100;
+}
+
+.mybos-main-nav li a:hover,
+.mybos-main-nav li.active a,
+.mybos-main-nav li a:focus {
+  background: #194771;
+  border-radius: 8px;
+}

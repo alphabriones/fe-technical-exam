@@ -1,0 +1,49 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm">
+      <div
+        class="alert alert-primary mybos-primary-alert d-flex align-items-center"
+      >
+        <a
+          href="#"
+          class="link-reverse d-flex align-items-between gap-2 px-2"
+          *ngFor="let _topBar of topBar"
+        >
+          <img src="/assets/img/icons/{{ _topBar.icon }}.svg" />
+          <span class="text-nowrap">{{ _topBar.title }}</span>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="mybos-search-box">
+        <img src="/assets/img/icons/magnifier.svg" />
+        <input
+          class="form-control mybos-top-search-box"
+          type="text"
+          placeholder="Search"
+        />
+      </div>
+    </div>
+    <div class="col-sm">
+      <div
+        class="alert alert-primary mybos-secondary-alert mybos-profile-box d-flex align-items-center justify-content-between gap-3"
+      >
+        <div class="d-flex gap-2">
+          <img src="/assets/img/icons/add.svg" /><span>Action</span>
+        </div>
+        <span class="px-2"
+          ><img src="/assets/img/icons/announcement.svg"
+        /></span>
+        <span class="px-2"
+          ><img src="/assets/img/icons/notification.svg"
+        /></span>
+        <div class="d-flex align-items-center gap-2">
+          <img src="/assets/img/icons/profile.svg" /><span
+            >Nasiso Island Management</span
+          >
+        </div>
+        <span><img src="/assets/img/icons/dropdown.svg" /></span>
+      </div>
+    </div>
+  </div>
+</div>
