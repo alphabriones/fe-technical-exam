@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DataTableDirective } from 'angular-datatables';
+import { CasesService } from '../services/cases.service';
+import { dtCaseColumns } from './case';
 
 @Component({
   selector: 'app-cases',
@@ -8,33 +9,25 @@ import { DataTableDirective } from 'angular-datatables';
 })
 export class CasesComponent implements OnInit {
   dtOptions: DataTables.Settings = {};
-  data: any;
+
+  constructor(private casesService: CasesService) {}
 
   ngOnInit(): void {
-    fetch('http://localhost:8000/api/cases')
-      .then((response) => response.json())
-      .then((quotesData) => {
-        this.data = quotesData.data;
-      });
-
     this.dtOptions = {
       ajax: (dataTablesParameters: any, callback) => {
-        fetch('http://localhost:8000/api/cases')
-          .then((response) => response.json())
-          .then((resp) => {
-            callback({
-              recordsTotal: resp.recordsTotal,
-              recordsFiltered: resp.recordsFiltered,
-              data: resp.data, // <-- see here
-            });
+        this.casesService.getCases().subscribe((response) => {
+          console.log('cases:', response.data);
+
+          callback({
+            recordsTotal: response.data.recordsTotal,
+            recordsFiltered: response.data.recordsFiltered,
+            data: response.data,
           });
+        });
       },
-      columns: [
-        {
-          title: 'ID',
-          data: 'case_number',
-        },
-      ],
+      columns: dtCaseColumns,
+      searching: false,
+      dom: 'rtiplf',
     };
   }
 }

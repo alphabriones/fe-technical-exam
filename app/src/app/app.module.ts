@@ -9,6 +9,8 @@ import { CasesDetailsComponent } from './cases-details/cases-details.component';
 import { SideNavComponent } from './navigation/side-nav/side-nav.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { DataTablesModule } from 'angular-datatables';
+import { HttpClientModule } from '@angular/common/http';
+import { CasesTopBarComponent } from './cases/cases-top-bar/cases-top-bar.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -24,10 +26,12 @@ const appRoutes: Routes = [
     CasesDetailsComponent,
     SideNavComponent,
     TopBarComponent,
+    CasesTopBarComponent,
   ],
   imports: [
     BrowserModule,
     DataTablesModule,
+    HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only

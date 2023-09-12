@@ -3,3 +3,21 @@
     height: 50px;
   }
 }
+
+.mybos-cases-left-group-menu {
+  span {
+    width: 135px;
+    text-align: center;
+    padding-bottom: 8px;
+  }
+  .mybos-cases-left-group-menu-active {
+    border-bottom: 4px solid #00274b;
+  }
+}
+
+.mybos-cases-action-group {
+  border-bottom: 1px solid #e8ebf0;
+  margin-bottom: 35px;
+  padding-bottom: 25px;
+  margin-top: 20px;
+}
