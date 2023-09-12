@@ -11,6 +11,8 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { DataTablesModule } from 'angular-datatables';
 import { HttpClientModule } from '@angular/common/http';
 import { CasesTopBarComponent } from './cases/cases-top-bar/cases-top-bar.component';
+import { AngularEditorModule } from '@kolkov/angular-editor';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -31,6 +33,9 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     DataTablesModule,
+    AngularEditorModule,
+    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     RouterModule.forRoot(
       appRoutes,

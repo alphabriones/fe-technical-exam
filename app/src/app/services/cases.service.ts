@@ -13,4 +13,8 @@ export class CasesService {
   getCases(): Observable<any> {
     return this.http.get<any>(this.url);
   }
+
+  getCaseById(id: any): Observable<any> {
+    return this.http.get<any>(`${this.url}/${id}`);
+  }
 }

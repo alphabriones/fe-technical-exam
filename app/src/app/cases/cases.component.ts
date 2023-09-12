@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CasesService } from '../services/cases.service';
 import { dtCaseColumns } from './case';
 
@@ -10,7 +11,7 @@ import { dtCaseColumns } from './case';
 export class CasesComponent implements OnInit {
   dtOptions: DataTables.Settings = {};
 
-  constructor(private casesService: CasesService) {}
+  constructor(private casesService: CasesService, private router: Router) {}
 
   ngOnInit(): void {
     this.dtOptions = {
@@ -23,6 +24,12 @@ export class CasesComponent implements OnInit {
             recordsFiltered: response.data.recordsFiltered,
             data: response.data,
           });
+        });
+
+        $('#table1 tbody').on('click', 'tr', function () {
+          const id = $(this).find('td:first-child').text();
+          console.log($(this).find('td:first-child').text());
+          window.location.href = `/cases/${id}`;
         });
       },
       columns: dtCaseColumns,

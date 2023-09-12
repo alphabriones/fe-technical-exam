@@ -1,16 +1,35 @@
 <div class="container-fluid">
   <div class="row my-3">
     <div class="col">
-      <div class="row">
-        <div class="mybos-panel mybos-secondary-primary">
-          <app-cases-top-bar></app-cases-top-bar>
-          <div class="data-table-wrapper">
-            <table
-              datatable
-              [dtOptions]="dtOptions"
-              class="row-border hover"
-            ></table>
-          </div>
+      <div
+        class="mybos-panel mybos-secondary-primary d-flex align-items-center justify-content-between"
+      >
+        <h4 class="my-0">Cases</h4>
+        <div>
+          <span class="px-2"
+            ><img src="/assets/img/icons/c-question.svg"
+          /></span>
+          <span class="px-2"><img src="/assets/img/icons/print.svg" /></span>
+          <span class="px-2"><img src="/assets/img/icons/filled.svg" /></span>
+          <button type="button" class="btn btn-primary mybos-btn-primary">
+            New Case
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row my-3">
+    <div class="col">
+      <div class="mybos-panel mybos-secondary-primary">
+        <app-cases-top-bar></app-cases-top-bar>
+        <div class="data-table-wrapper">
+          <table
+            id="table1"
+            datatable
+            [dtOptions]="dtOptions"
+            class="row-border hover"
+          ></table>
         </div>
       </div>
     </div>

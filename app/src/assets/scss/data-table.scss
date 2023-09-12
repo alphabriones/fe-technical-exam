@@ -11,6 +11,7 @@
   table.dataTable.display > tbody > tr > th,
   table.dataTable.display > tbody > tr > td {
     border-top: 1px solid rgba(59, 59, 59, 0.1);
+    cursor: pointer;
   }
 
   table.dataTable > thead > tr > th,
@@ -43,5 +44,12 @@
   .dataTables_wrapper .dataTables_length select {
     border: none;
     background: #e8ebf0;
+  }
+}
+
+#table1 {
+  tr th:first-child,
+  tr td:first-child {
+    display: none;
   }
 }

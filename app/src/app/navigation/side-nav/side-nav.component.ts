@@ -14,6 +14,7 @@ export class SideNavComponent {
     {
       title: 'Cases',
       icon: 'briefcase',
+      url: '/cases',
     },
     {
       title: 'Work Order Sent',

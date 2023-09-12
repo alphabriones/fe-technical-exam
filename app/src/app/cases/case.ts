@@ -1,5 +1,9 @@
 export const dtCaseColumns = [
   {
+    id: 'id',
+    data: 'id',
+  },
+  {
     title: 'ID',
     data: 'case_number',
   },

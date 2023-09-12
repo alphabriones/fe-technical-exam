@@ -1,6 +1,9 @@
 <ul class="mybos-main-nav">
   <li *ngFor="let nav of navigation">
-    <a href="#" class="link-reverse d-flex align-items-center gap-2">
+    <a
+      href="{{ nav.url }}"
+      class="link-reverse d-flex align-items-center gap-2"
+    >
       <img src="/assets/img/icons/{{ nav.icon }}.svg" />
       <span style="color: {{ nav.color }}">{{ nav.title }}</span>
     </a>
