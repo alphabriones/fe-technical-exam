@@ -8,6 +8,7 @@ import { CasesComponent } from './cases/cases.component';
 import { CasesDetailsComponent } from './cases-details/cases-details.component';
 import { SideNavComponent } from './navigation/side-nav/side-nav.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { DataTablesModule } from 'angular-datatables';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,6 +27,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    DataTablesModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only

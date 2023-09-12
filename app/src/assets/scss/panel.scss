@@ -1,0 +1,17 @@
+.mybos-panel {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+
+  &.mybos-panel-primary {
+    background: $mybos-primary;
+    border-color: $mybos-primary;
+    color: $mybos-secondary-text;
+  }
+
+  &.mybos-secondary-primary {
+    background: $mybos-secondary;
+    border-color: $mybos-secondary;
+    color: $mybos-primary-text;
+  }
+}
